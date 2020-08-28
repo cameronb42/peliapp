@@ -25,7 +25,13 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
          ('GitHub', 'https://github.com/jray6055/peliapplab.git'),)
 
-#THEME = 
+THEME = '/home/lie6055/peliapp/pelican-themes/blue-penguin'
+PLUGIN_PATHS = ['/home/lie6055/peliapp/pelican-plugins', ]
+PLUGINS = ['i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+        'extensions': ['jinja2.ext.i18n'],
+        }
+
 # Social widget
 
 DEFAULT_PAGINATION = False
